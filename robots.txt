@@ -1,0 +1,32 @@
+# robots.txt for Healthy Life Guide (ourhealthinfo.com)
+# This file tells search engines which pages to crawl and which to ignore
+
+User-agent: *
+Allow: /
+
+# Allow all blog posts
+Allow: /blog/my-weight-loss-journey.html
+Allow: /blog/how-i-started-healthy-diet.html
+Allow: /blog/my-daily-fitness-routine.html
+
+# Allow all tools pages
+Allow: /tools/bmi-calculator.html
+Allow: /tools/calorie-calculator.html
+Allow: /tools/body-fat-calculator.html
+
+# Allow contact and legal pages
+Allow: /contact.html
+Allow: /blog/privacy.html
+Allow: /blog/about.html
+Allow: /blog/disclaimer.html
+
+# Disallow admin or system paths (not applicable for static site, but good practice)
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+
+# Specify sitemap location
+Sitemap: https://ourhealthinfo.com/sitemap.xml
+
+# Crawl delay to be respectful to servers (optional)
+Crawl-delay: 1

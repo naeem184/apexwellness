@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>BMI Calculator - Check Your Body Mass Index | Free Health Tool</title>
+    <meta name="description" content="Free BMI calculator. Check if your weight is in healthy range. Instant results with personalized advice based on WHO standards. Track your health journey.">
+    <meta name="keywords" content="BMI calculator, body mass index, healthy weight range, weight check tool, free health calculator, BMI chart, ideal weight">
+    <meta name="author" content="Healthy Life Guide">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://ourhealthinfo.com/tools/bmi-calculator.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../pictures/favicon.png" type="image/jpeg">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXMY2THTPW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GXMY2THTPW');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5123298033596186"
+         crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Free BMI Calculator - Check Your Healthy Weight Range">
+    <meta property="og:description" content="Calculate your BMI instantly. Get personalized advice based on your results.">
+    <meta property="og:type" content="website">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "BMI Calculator",
+        "description": "Calculate Body Mass Index to check healthy weight range",
+        "applicationCategory": "Health",
+        "operatingSystem": "All",
+        "url": "https://ourhealthinfo.com/tools/bmi-calculator.html"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.jpg">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i> Healthy Life Guide</h1>
+            <p>Real journey. Real results. Real health.</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#blogs">Blogs</a></li>
+                <li><a href="../index.html#tools">Tools</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Layout with Sidebar for Desktop -->
+<main class="container main-layout">
+    
+    <!-- LEFT COLUMN: Main Content -->
+    <div class="main-content">
+        <div class="tool-container">
+            <h1><i class="fas fa-calculator"></i> BMI Calculator</h1>
+            <p>Body Mass Index (BMI) is a measure of body fat based on height and weight. Calculate yours below to see if you're in a healthy range.</p>
+            
+            <div class="calculator-box">
+                <div class="form-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="Enter your weight in kg" step="0.1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="Enter your height in cm">
+                </div>
+                
+                <button class="btn-calculate" onclick="calculateBMI()">Calculate BMI</button>
+                
+                <div class="result-box" id="bmiResult">
+                    <h3>Your BMI Result</h3>
+                    <p>Enter your details above to see your BMI.</p>
+                </div>
+            </div>
+            
+            <!-- IN-ARTICLE AD 1 (After calculator) -->
+            <div class="inarticle-ad">
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-5123298033596186"
+                     data-ad-slot="1799684906"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <div class="tool-info">
+                <h3><i class="fas fa-info-circle"></i> How to Use This BMI Calculator</h3>
+                <p>Using this tool is simple:</p>
+                <ol>
+                    <li>Enter your weight in kilograms (kg)</li>
+                    <li>Enter your height in centimeters (cm)</li>
+                    <li>Click "Calculate BMI"</li>
+                    <li>See your BMI number and what it means for your health</li>
+                </ol>
+                
+                <h3>BMI Categories (WHO Standards)</h3>
+                <ul>
+                    <li><strong>Below 18.5:</strong> Underweight - Consider gaining weight with nutrient-rich foods</li>
+                    <li><strong>18.5 - 24.9:</strong> Normal weight - Great! Maintain with balanced diet and exercise</li>
+                    <li><strong>25.0 - 29.9:</strong> Overweight - Small changes can help reach a healthier range</li>
+                    <li><strong>30.0 and above:</strong> Obese - Consider consulting a doctor for guidance</li>
+                </ul>
+                <p><small>Source: World Health Organization (WHO) BMI Classification</small></p>
+                
+                <h3><i class="fas fa-heart"></i> A Note From My Experience</h3>
+                <p>BMI is just one number. It doesn't tell the whole story about your health. Don't obsess over it. I used to check my BMI every day and feel terrible when it didn't change. Now I check it once a month. Focus on how you feel, not just the number. And remember - you're more than a number on any calculator.</p>
+            </div>
+            
+            <div class="info-box">
+                <i class="fas fa-chart-line"></i> <strong>What is Body Mass Index (BMI)?</strong><br>
+                BMI stands for Body Mass Index. It is a simple calculation that uses your height and weight to estimate your body fat. Doctors and health professionals use BMI as a screening tool to identify potential weight problems. While it's not perfect, it's a helpful starting point for understanding your health.
+            </div>
+            
+            <h2>Why Your BMI Matters</h2>
+            <p>Your BMI gives you a general idea of whether your weight is in a healthy range. Studies have shown that people with a BMI in the normal range (18.5-24.9) generally have lower risks for chronic diseases like heart disease, diabetes, and high blood pressure.</p>
+            
+            <p>However, BMI is not the only measure of health. Muscle weighs more than fat. So athletes or people with high muscle mass may have a high BMI even though they are very healthy. That's why it's important to consider other factors like how you feel, your energy levels, and your overall lifestyle.</p>
+            
+            <!-- IN-ARTICLE AD 2 (Middle of content) -->
+            <div class="inarticle-ad">
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-5123298033596186"
+                     data-ad-slot="1799684906"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <h2>How BMI is Calculated</h2>
+            <p>The BMI formula is simple: weight (kg) divided by height squared (m²). For example, if you weigh 70kg and your height is 1.75m, your BMI would be 70 ÷ (1.75 × 1.75) = 22.86, which falls in the normal weight range.</p>
+            
+            <p>This calculator does the math for you automatically. Just enter your weight and height, and you'll get your result instantly.</p>
+            
+            <div class="tip-box">
+                <i class="fas fa-lightbulb"></i> <strong>Small Changes Make Big Differences</strong><br>
+                If your BMI is above the healthy range, don't panic. You don't need to lose weight overnight. Small, consistent changes add up over time. Walking for 10 minutes daily, drinking more water, and eating one extra serving of vegetables each day can make a real difference over months.
+            </div>
+            
+            <h2>Limitations of BMI</h2>
+            <p>While BMI is a useful tool, it has limitations. It doesn't measure body fat directly. It also doesn't account for:</p>
+            <ul>
+                <li>Muscle mass (muscle weighs more than fat)</li>
+                <li>Age (older adults may have less muscle)</li>
+                <li>Gender (women naturally have more body fat)</li>
+                <li>Body frame size</li>
+                <li>Where fat is distributed on your body</li>
+            </ul>
+            <p>That's why you should use BMI as a guide, not the final word on your health. Listen to your body and how you feel.</p>
+            
+            <h2>What to Do After Checking Your BMI</h2>
+            <ul>
+                <li><strong>If BMI is normal:</strong> Great job! Keep eating balanced meals and staying active.</li>
+                <li><strong>If BMI is underweight:</strong> Try adding nutrient-dense foods like nuts, eggs, and whole grains.</li>
+                <li><strong>If BMI is overweight or obese:</strong> Start with small changes. Walk more. Eat one healthy meal a day. Drink water instead of soda.</li>
+            </ul>
+            
+            <div class="warning-box">
+                <i class="fas fa-heart" style="color:#22c55e"></i> <strong>Remember From My Journey:</strong> I started with a BMI over 30. I didn't change overnight. I just started walking. Then I changed one meal at a time. Two years later, my BMI is in the normal range. You can do it too. One small step at a time.
+            </div>
+            
+            <p><a href="../index.html">← Back to Home</a> | <a href="../tools/calorie-calculator.html">Try Calorie Calculator →</a></p>
+            
+        </div>
+    </div>
+    
+    <!-- RIGHT COLUMN: Sidebar for Desktop Ads -->
+    <aside class="sidebar">
+        
+        <!-- Sidebar Ad 1 -->
+        <div class="sidebar-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5123298033596186"
+                 data-ad-slot="8180225611"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Popular Posts Widget -->
+        <div class="sidebar-widget">
+            <h3><i class="fas fa-fire"></i> Most Popular</h3>
+            <ul>
+                <li><a href="../blog/my-weight-loss-journey.html">How I Stopped Eating Junk</a></li>
+                <li><a href="../blog/complete-beginner-fitness-guide.html">Complete Beginner Fitness Guide</a></li>
+                <li><a href="../blog/complete-nutrition-guide.html">Complete Nutrition Guide</a></li>
+                <li><a href="../blog/complete-mindset-guide.html">Mindset: The Engine of Change</a></li>
+                <li><a href="../blog/my-daily-fitness-routine.html">Complete Fitness Guide</a></li>
+            </ul>
+        </div>
+        
+        <!-- Sidebar Ad 2 -->
+        <div class="sidebar-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5123298033596186"
+                 data-ad-slot="1234567890"
+                 data-ad-format="rectangle"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Newsletter Widget -->
+        <div class="sidebar-widget">
+            <h3><i class="fas fa-envelope"></i> Get Weekly Tips</h3>
+            <p>Subscribe to get health tips directly in your inbox.</p>
+            <input type="email" placeholder="Your email address" class="sidebar-input">
+            <button class="sidebar-btn">Subscribe Now →</button>
+        </div>
+        
+        <!-- Sidebar Ad 3 -->
+        <div class="sidebar-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5123298033596186"
+                 data-ad-slot="9876543210"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Other Tools Widget -->
+        <div class="sidebar-widget">
+            <h3><i class="fas fa-tools"></i> Other Free Tools</h3>
+            <ul>
+                <li><a href="../tools/calorie-calculator.html">Calorie Calculator</a></li>
+                <li><a href="../tools/body-fat-calculator.html">Body Fat Calculator</a></li>
+            </ul>
+        </div>
+        
+    </aside>
+</main>
+
+<!-- MOBILE ONLY: Bottom Anchor Ad (Sticky on Mobile) -->
+<div class="mobile-bottom-ad">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5123298033596186"
+         data-ad-slot="8180225611"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Healthy Life Guide</h3>
+                <p>Real health journey based on personal experience.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#blogs">Blogs</a></li>
+                    <li><a href="../index.html#tools">Tools</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../blog/privacy.html">Privacy Policy</a></li>
+                    <li><a href="../blog/about.html">About Us</a></li>
+                    <li><a href="../blog/disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923494606545">+92 349 4606545</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:ourhealthinfo@gmail.com">ourhealthinfo@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Healthy Life Guide | Free Health Tools</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+function calculateBMI() {
+    // Get input values
+    let weight = document.getElementById('weight').value;
+    let height = document.getElementById('height').value;
+    
+    // Validate inputs
+    if (weight === "" || height === "") {
+        document.getElementById('bmiResult').innerHTML = `
+            <h3>Your BMI Result</h3>
+            <p style="color: #ef4444;">Please enter both weight and height.</p>
+        `;
+        return;
+    }
+    
+    weight = parseFloat(weight);
+    height = parseFloat(height);
+    
+    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+        document.getElementById('bmiResult').innerHTML = `
+            <h3>Your BMI Result</h3>
+            <p style="color: #ef4444;">Please enter valid numbers (positive values only).</p>
+        `;
+        return;
+    }
+    
+    // Calculate BMI
+    let heightInMeters = height / 100;
+    let bmi = weight / (heightInMeters * heightInMeters);
+    bmi = bmi.toFixed(1);
+    
+    // Determine category and advice
+    let category = "";
+    let advice = "";
+    let color = "";
+    
+    if (bmi < 18.5) {
+        category = "Underweight";
+        advice = "Consider adding nutrient-rich foods like nuts, eggs, and whole grains to your diet.";
+        color = "#f59e0b";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        category = "Normal weight";
+        advice = "Great job! Keep maintaining your healthy lifestyle with balanced diet and regular exercise.";
+        color = "#22c55e";
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        category = "Overweight";
+        advice = "Small changes can help. Try walking daily, drinking more water, and eating more vegetables.";
+        color = "#f59e0b";
+    } else {
+        category = "Obese";
+        advice = "Consider consulting a doctor for personalized guidance. Start with small, consistent changes.";
+        color = "#ef4444";
+    }
+    
+    // Display result
+    document.getElementById('bmiResult').innerHTML = `
+        <h3>Your BMI Result</h3>
+        <div class="result-value" style="color: ${color}; font-size: 2.5rem; font-weight: bold; margin: 10px 0;">${bmi}</div>
+        <p><strong>Category:</strong> ${category}</p>
+        <p><strong>What this means:</strong> ${advice}</p>
+        <hr>
+        <p style="font-size: 0.85rem; margin-top: 10px;"><strong>Note:</strong> BMI is a general guide. It doesn't account for muscle mass, age, or gender. Talk to a doctor for a complete health assessment.</p>
+    `;
+}
+</script>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

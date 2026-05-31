@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- ========== HOME PAGE ========== -->
+    <url>
+        <loc>https://ourhealthinfo.com/</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- ========== CONTACT PAGE ========== -->
+    <url>
+        <loc>https://ourhealthinfo.com/contact</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- ========== BLOG POSTS ========== -->
+    
+    <url>
+        <loc>https://ourhealthinfo.com/blog/my-weight-loss-journey</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://ourhealthinfo.com/assets/weight-loss-journey.jpg</image:loc>
+            <image:title>My Weight Loss Transformation Journey</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://ourhealthinfo.com/blog/how-i-started-healthy-diet</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://ourhealthinfo.com/assets/healthy-diet.jpg</image:loc>
+            <image:title>Healthy Mindset and Habits</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://ourhealthinfo.com/blog/my-daily-fitness-routine</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://ourhealthinfo.com/assets/daily-fitness.jpg</image:loc>
+            <image:title>Complete Home Fitness Guide</image:title>
+        </image:image>
+    </url>
+    
+    <!-- ========== LEGAL PAGES ========== -->
+    
+    <url>
+        <loc>https://ourhealthinfo.com/blog/privacy</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://ourhealthinfo.com/blog/about</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://ourhealthinfo.com/blog/disclaimer</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- ========== TOOLS PAGES ========== -->
+    
+    <url>
+        <loc>https://ourhealthinfo.com/tools/bmi-calculator</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://ourhealthinfo.com/tools/calorie-calculator</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://ourhealthinfo.com/tools/body-fat-calculator</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+</urlset>

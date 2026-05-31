@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Body Fat Calculator - Measure Your Body Fat Percentage | Free Health Tool</title>
+    <meta name="description" content="Free body fat calculator using US Navy method. Measure body fat percentage with simple tape measurements. Get personalized fitness advice.">
+    <meta name="keywords" content="body fat calculator, body fat percentage, body fat measurement, US Navy method, fitness assessment, health tool, body composition">
+    <meta name="author" content="Healthy Life Guide">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://ourhealthinfo.com/tools/body-fat-calculator.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../pictures/favicon.png" type="image/jpeg">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXMY2THTPW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GXMY2THTPW');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5123298033596186"
+         crossorigin="anonymous"></script>
+
+    <meta property="og:title" content="Free Body Fat Calculator - US Navy Method">
+    <meta property="og:description" content="Calculate your body fat percentage with simple tape measurements.">
+    <meta property="og:type" content="website">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Body Fat Calculator",
+        "description": "Calculate body fat percentage using US Navy method",
+        "applicationCategory": "Health",
+        "url": "https://ourhealthinfo.com/tools/body-fat-calculator.html"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.jpg">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <div class="logo">
+            <h1><i class="fas fa-leaf"></i> Healthy Life Guide</h1>
+            <p>Real journey. Real results. Real health.</p>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#blogs">Blogs</a></li>
+                <li><a href="../index.html#tools">Tools</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Layout with Sidebar for Desktop -->
+<main class="container main-layout">
+    
+    <!-- LEFT COLUMN: Main Content -->
+    <div class="main-content">
+        <div class="tool-container">
+            <h1><i class="fas fa-chart-line"></i> Body Fat Calculator</h1>
+            <p>Calculate your body fat percentage using the US Navy method. You'll need a measuring tape for this. It's simple, free, and surprisingly accurate.</p>
+            
+            <div class="calculator-box">
+                <div class="form-group">
+                    <label for="bfGender">Gender</label>
+                    <select id="bfGender" onchange="toggleHipInput()">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="neck">Neck Measurement (cm)</label>
+                    <input type="number" id="neck" placeholder="Measure neck below Adam's apple" step="0.1">
+                    <small style="display: block; margin-top: 5px;">Measure around your neck just below the Adam's apple</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="waist">Waist Measurement (cm)</label>
+                    <input type="number" id="waist" placeholder="Measure at belly button level" step="0.1">
+                    <small style="display: block; margin-top: 5px;">Measure at the narrowest point or belly button level</small>
+                </div>
+                
+                <div class="form-group" id="hipGroup">
+                    <label for="hip">Hip Measurement (cm) - For females</label>
+                    <input type="number" id="hip" placeholder="Measure at widest point of hips" step="0.1">
+                    <small style="display: block; margin-top: 5px;">Measure at the widest point of your hips/buttocks</small>
+                </div>
+                
+                <button class="btn-calculate" onclick="calculateBodyFat()">Calculate Body Fat</button>
+                
+                <div class="result-box" id="bodyFatResult">
+                    <h3>Your Body Fat Percentage</h3>
+                    <p>Enter your measurements above to see results.</p>
+                </div>
+            </div>
+            
+            <!-- IN-ARTICLE AD 1 (After calculator) -->
+            <div class="inarticle-ad">
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-5123298033596186"
+                     data-ad-slot="1799684906"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <div class="tool-info">
+                <h3><i class="fas fa-info-circle"></i> How to Use This Body Fat Calculator</h3>
+                <ol>
+                    <li>Select your gender (male or female)</li>
+                    <li>Measure your neck at the narrowest point below your Adam's apple</li>
+                    <li>Measure your waist at belly button level</li>
+                    <li>If female, measure your hips at the widest point</li>
+                    <li>Enter all measurements in centimeters (cm)</li>
+                    <li>Click "Calculate Body Fat"</li>
+                </ol>
+                
+                <h3>Body Fat Categories (American Council on Exercise)</h3>
+                <ul>
+                    <li><strong>Men:</strong> Essential fat (2-5%) | Athletes (6-13%) | Fitness (14-17%) | Average (18-24%) | Obese (25%+)</li>
+                    <li><strong>Women:</strong> Essential fat (10-13%) | Athletes (14-20%) | Fitness (21-24%) | Average (25-31%) | Obese (32%+)</li>
+                </ul>
+                
+                <p><small>Source: American Council on Exercise (ACE) Body Fat Categories / US Navy Method</small></p>
+            </div>
+            
+            <div class="info-box">
+                <i class="fas fa-heart"></i> <strong>What is Body Fat Percentage?</strong><br>
+                Body fat percentage is the amount of fat mass divided by total body mass. Unlike BMI which only uses height and weight, body fat percentage gives you a better picture of your actual body composition. Two people with the same BMI can have very different body fat percentages.
+            </div>
+            
+            <!-- IN-ARTICLE AD 2 (Middle of content) -->
+            <div class="inarticle-ad">
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-5123298033596186"
+                     data-ad-slot="1799684906"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <h2>Why Body Fat Percentage Matters More Than Weight</h2>
+            <p>Your weight alone doesn't tell you much about your health. Muscle weighs more than fat. So you could be losing fat and gaining muscle, and the scale might not change much. That's why body fat percentage is a better measure of progress.</p>
+            
+            <p>When I started my health journey, I weighed 95kg. After 6 months of walking daily and eating better, I weighed 92kg. Only 3kg lost! But my body fat had dropped from 32% to 26%. My clothes fit better. I had more energy. The scale didn't tell the full story.</p>
+            
+            <div class="tip-box">
+                <i class="fas fa-lightbulb"></i> <strong>The US Navy Method</strong><br>
+                The US Navy method is one of the most accurate ways to measure body fat without expensive equipment. It uses simple tape measurements and has been validated by research. While not as precise as a DEXA scan, it's great for tracking changes over time.
+            </div>
+            
+            <h2>How to Take Accurate Measurements</h2>
+            <ul>
+                <li><strong>Neck:</strong> Measure just below the Adam's apple. Keep the tape horizontal.</li>
+                <li><strong>Waist:</strong> For men, measure at belly button level. For women, measure at the narrowest point.</li>
+                <li><strong>Hips (women only):</strong> Measure at the widest point of your buttocks.</li>
+                <li><strong>Best time to measure:</strong> First thing in the morning, before eating or drinking.</li>
+                <li><strong>Don't pull the tape too tight:</strong> It should be snug but not compressing your skin.</li>
+            </ul>
+            
+            <h2>Healthy Body Fat Ranges by Age</h2>
+            <p>Body fat naturally increases with age. Here are healthy ranges for different ages:</p>
+            <ul>
+                <li><strong>Ages 20-39:</strong> Men 8-20% | Women 21-32%</li>
+                <li><strong>Ages 40-59:</strong> Men 11-22% | Women 23-34%</li>
+                <li><strong>Ages 60-79:</strong> Men 13-25% | Women 24-36%</li>
+            </ul>
+            
+            <div class="warning-box">
+                <i class="fas fa-heart" style="color:#22c55e"></i> <strong>A Note From My Experience:</strong> Body fat percentage is just ONE measure of health. When I started, my body fat was over 28%. Now it's around 18%. But here's what matters more: I feel better. I move better. I sleep better. Don't obsess over this number. Use it as a general guide. Focus on how your clothes fit and how you feel. That's what really counts.
+            </div>
+            
+            <h2>What to Do After Getting Your Results</h2>
+            <ul>
+                <li><strong>If body fat is in healthy range:</strong> Great job! Keep doing what you're doing.</li>
+                <li><strong>If body fat is above healthy range:</strong> Start with small changes. Walk daily. Eat more vegetables. Drink water instead of soda.</li>
+                <li><strong>If body fat is very low:</strong> Make sure you're eating enough for your activity level.</li>
+            </ul>
+            <p>Remember: This is just one tool. Use it to track progress over time. Measure once a month, not every day.</p>
+            
+            <p><a href="../index.html">← Back to Home</a> | <a href="../tools/bmi-calculator.html">Try BMI Calculator →</a> | <a href="../tools/calorie-calculator.html">Try Calorie Calculator →</a></p>
+            
+        </div>
+    </div>
+    
+    <!-- RIGHT COLUMN: Sidebar for Desktop Ads -->
+    <aside class="sidebar">
+        
+        <!-- Sidebar Ad 1 -->
+        <div class="sidebar-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5123298033596186"
+                 data-ad-slot="8180225611"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Popular Posts Widget -->
+        <div class="sidebar-widget">
+            <h3><i class="fas fa-fire"></i> Most Popular</h3>
+            <ul>
+                <li><a href="../blog/my-weight-loss-journey.html">How I Stopped Eating Junk</a></li>
+                <li><a href="../blog/complete-beginner-fitness-guide.html">Complete Beginner Fitness Guide</a></li>
+                <li><a href="../blog/complete-nutrition-guide.html">Complete Nutrition Guide</a></li>
+                <li><a href="../blog/complete-mindset-guide.html">Mindset: The Engine of Change</a></li>
+                <li><a href="../blog/my-daily-fitness-routine.html">Complete Fitness Guide</a></li>
+            </ul>
+        </div>
+        
+        <!-- Sidebar Ad 2 -->
+        <div class="sidebar-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5123298033596186"
+                 data-ad-slot="1234567890"
+                 data-ad-format="rectangle"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Newsletter Widget -->
+        <div class="sidebar-widget">
+            <h3><i class="fas fa-envelope"></i> Get Weekly Tips</h3>
+            <p>Subscribe to get health tips directly in your inbox.</p>
+            <input type="email" placeholder="Your email address" class="sidebar-input">
+            <button class="sidebar-btn">Subscribe Now →</button>
+        </div>
+        
+        <!-- Sidebar Ad 3 -->
+        <div class="sidebar-ad">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5123298033596186"
+                 data-ad-slot="9876543210"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- Other Tools Widget -->
+        <div class="sidebar-widget">
+            <h3><i class="fas fa-tools"></i> Other Free Tools</h3>
+            <ul>
+                <li><a href="../tools/bmi-calculator.html">BMI Calculator</a></li>
+                <li><a href="../tools/calorie-calculator.html">Calorie Calculator</a></li>
+            </ul>
+        </div>
+        
+    </aside>
+</main>
+
+<!-- MOBILE ONLY: Bottom Anchor Ad (Sticky on Mobile) -->
+<div class="mobile-bottom-ad">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5123298033596186"
+         data-ad-slot="8180225611"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Healthy Life Guide</h3>
+                <p>Real health journey based on personal experience.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#blogs">Blogs</a></li>
+                    <li><a href="../index.html#tools">Tools</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="../blog/privacy.html">Privacy Policy</a></li>
+                    <li><a href="../blog/about.html">About Us</a></li>
+                    <li><a href="../blog/disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+923494606545">+92 349 4606545</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:ourhealthinfo@gmail.com">ourhealthinfo@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Healthy Life Guide | Free Health Tools</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Toggle hip input based on gender selection
+function toggleHipInput() {
+    const gender = document.getElementById('bfGender').value;
+    const hipGroup = document.getElementById('hipGroup');
+    
+    if (gender === 'female') {
+        hipGroup.style.display = 'block';
+    } else {
+        hipGroup.style.display = 'none';
+    }
+}
+
+// US Navy Body Fat Calculation
+function calculateBodyFat() {
+    // Get values
+    const gender = document.getElementById('bfGender').value;
+    let neck = parseFloat(document.getElementById('neck').value);
+    let waist = parseFloat(document.getElementById('waist').value);
+    let hip = gender === 'female' ? parseFloat(document.getElementById('hip').value) : 0;
+    
+    // Validate inputs
+    if (isNaN(neck) || neck <= 0 || isNaN(waist) || waist <= 0) {
+        document.getElementById('bodyFatResult').innerHTML = `
+            <h3>Your Body Fat Percentage</h3>
+            <p style="color: #ef4444;">Please enter valid measurements (neck and waist required).</p>
+        `;
+        return;
+    }
+    
+    if (gender === 'female' && (isNaN(hip) || hip <= 0)) {
+        document.getElementById('bodyFatResult').innerHTML = `
+            <h3>Your Body Fat Percentage</h3>
+            <p style="color: #ef4444;">Please enter valid hip measurement for females.</p>
+        `;
+        return;
+    }
+    
+    let bodyFat = 0;
+    
+    if (gender === 'male') {
+        // US Navy formula for men
+        bodyFat = 86.010 * Math.log10(waist - neck) - 70.041 * Math.log10(170) + 36.76;
+    } else {
+        // US Navy formula for women
+        bodyFat = 163.205 * Math.log10(waist + hip - neck) - 97.684 * Math.log10(162) - 78.387;
+    }
+    
+    // Round to 1 decimal
+    bodyFat = Math.round(bodyFat * 10) / 10;
+    
+    // Ensure reasonable range
+    if (bodyFat < 5) bodyFat = 5;
+    if (bodyFat > 50) bodyFat = 50;
+    
+    // Determine category
+    let category = "";
+    let advice = "";
+    let color = "";
+    
+    if (gender === 'male') {
+        if (bodyFat <= 5) {
+            category = "Essential Fat (Very Low)";
+            advice = "You may have extremely low body fat. Ensure you're getting adequate nutrition.";
+            color = "#f59e0b";
+        } else if (bodyFat <= 13) {
+            category = "Athlete";
+            advice = "Excellent! You're in athlete range. Maintain with balanced nutrition and training.";
+            color = "#22c55e";
+        } else if (bodyFat <= 17) {
+            category = "Fitness";
+            advice = "Great job! You're in the fitness category. Keep up your healthy habits.";
+            color = "#22c55e";
+        } else if (bodyFat <= 24) {
+            category = "Average";
+            advice = "You're in the average healthy range. Small improvements can get you to fitness level.";
+            color = "#f59e0b";
+        } else {
+            category = "Obese Range";
+            advice = "Consider consulting a doctor. Start with small changes like walking daily and eating more vegetables.";
+            color = "#ef4444";
+        }
+    } else {
+        if (bodyFat <= 13) {
+            category = "Essential Fat (Very Low)";
+            advice = "You may have extremely low body fat. Ensure you're getting adequate nutrition.";
+            color = "#f59e0b";
+        } else if (bodyFat <= 20) {
+            category = "Athlete";
+            advice = "Excellent! You're in athlete range. Maintain with balanced nutrition and training.";
+            color = "#22c55e";
+        } else if (bodyFat <= 24) {
+            category = "Fitness";
+            advice = "Great job! You're in the fitness category. Keep up your healthy habits.";
+            color = "#22c55e";
+        } else if (bodyFat <= 31) {
+            category = "Average";
+            advice = "You're in the average healthy range. Small improvements can get you to fitness level.";
+            color = "#f59e0b";
+        } else {
+            category = "Obese Range";
+            advice = "Consider consulting a doctor. Start with small changes like walking daily and eating more vegetables.";
+            color = "#ef4444";
+        }
+    }
+    
+    // Display result
+    document.getElementById('bodyFatResult').innerHTML = `
+        <h3>Your Body Fat Percentage</h3>
+        <div class="result-value" style="color: ${color}; font-size: 2.5rem; font-weight: bold; margin: 10px 0;">${bodyFat}%</div>
+        <p><strong>Category:</strong> ${category}</p>
+        <p><strong>What this means:</strong> ${advice}</p>
+        <hr>
+        <p style="font-size: 0.85rem; margin-top: 10px;"><strong>Note:</strong> This is an estimate based on the US Navy method. For accurate medical assessment, consult a healthcare professional.</p>
+    `;
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    toggleHipInput();
+});
+</script>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
