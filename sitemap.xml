@@ -1,102 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- ==================== MAIN PAGES ==================== -->
     
-    <!-- ========== HOME PAGE ========== -->
+    <!-- Home Page -->
     <url>
         <loc>https://ourhealthinfo.com/</loc>
-        <lastmod>2026-04-05</lastmod>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <priority>1.00</priority>
     </url>
     
-    <!-- ========== CONTACT PAGE ========== -->
+    <!-- Contact Page -->
     <url>
-        <loc>https://ourhealthinfo.com/contact</loc>
-        <lastmod>2026-04-05</lastmod>
+        <loc>https://ourhealthinfo.com/contact.html</loc>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.80</priority>
     </url>
+
+    <!-- ==================== BLOG PAGES ==================== -->
     
-    <!-- ========== BLOG POSTS ========== -->
-    
+    <!-- About Page -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/my-weight-loss-journey</loc>
-        <lastmod>2026-04-05</lastmod>
+        <loc>https://ourhealthinfo.com/blog/about.html</loc>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://ourhealthinfo.com/assets/weight-loss-journey.jpg</image:loc>
-            <image:title>My Weight Loss Transformation Journey</image:title>
-        </image:image>
+        <priority>0.70</priority>
     </url>
     
+    <!-- Privacy Policy -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/how-i-started-healthy-diet</loc>
-        <lastmod>2026-04-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://ourhealthinfo.com/assets/healthy-diet.jpg</image:loc>
-            <image:title>Healthy Mindset and Habits</image:title>
-        </image:image>
-    </url>
-    
-    <url>
-        <loc>https://ourhealthinfo.com/blog/my-daily-fitness-routine</loc>
-        <lastmod>2026-04-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://ourhealthinfo.com/assets/daily-fitness.jpg</image:loc>
-            <image:title>Complete Home Fitness Guide</image:title>
-        </image:image>
-    </url>
-    
-    <!-- ========== LEGAL PAGES ========== -->
-    
-    <url>
-        <loc>https://ourhealthinfo.com/blog/privacy</loc>
-        <lastmod>2026-04-05</lastmod>
+        <loc>https://ourhealthinfo.com/blog/privacy.html</loc>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.60</priority>
     </url>
     
+    <!-- Disclaimer -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/about</loc>
-        <lastmod>2026-04-05</lastmod>
+        <loc>https://ourhealthinfo.com/blog/disclaimer.html</loc>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.60</priority>
     </url>
     
+    <!-- Weight Loss Journey Story -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/disclaimer</loc>
-        <lastmod>2026-04-05</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <!-- ========== TOOLS PAGES ========== -->
-    
-    <url>
-        <loc>https://ourhealthinfo.com/tools/bmi-calculator</loc>
-        <lastmod>2026-04-05</lastmod>
+        <loc>https://ourhealthinfo.com/blog/my-weight-loss-journey.html</loc>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.90</priority>
     </url>
     
+    <!-- Mindset & Habits Story -->
     <url>
-        <loc>https://ourhealthinfo.com/tools/calorie-calculator</loc>
-        <lastmod>2026-04-05</lastmod>
+        <loc>https://ourhealthinfo.com/blog/how-i-started-healthy-diet.html</loc>
+        <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.85</priority>
     </url>
     
+    <!-- Complete Fitness Guide -->
     <url>
-        <loc>https://ourhealthinfo.com/tools/body-fat-calculator</loc>
-        <lastmod>2026-04-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://ourhealthinfo.com/blog/my-daily-fitness-routine.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
     </url>
     
+    <!-- Complete Beginner Fitness Guide -->
+    <url>
+        <loc>https://ourhealthinfo.com/blog/complete-beginner-fitness-guide.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    
+    <!-- Complete Nutrition Guide -->
+    <url>
+        <loc>https://ourhealthinfo.com/blog/complete-nutrition-guide.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- Complete Mindset Guide -->
+    <url>
+        <loc>https://ourhealthinfo.com/blog/complete-mindset-guide.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ==================== TOOLS PAGES ==================== -->
+    
+    <!-- BMI Calculator Tool -->
+    <url>
+        <loc>https://ourhealthinfo.com/tools/bmi-calculator.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Calorie Calculator Tool -->
+    <url>
+        <loc>https://ourhealthinfo.com/tools/calorie-calculator.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    
+    <!-- Body Fat Calculator Tool -->
+    <url>
+        <loc>https://ourhealthinfo.com/tools/body-fat-calculator.html</loc>
+        <lastmod>2026-06-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
 </urlset>
