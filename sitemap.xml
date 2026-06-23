@@ -8,7 +8,7 @@
     
     <!-- Home Page -->
     <url>
-        <loc>https://ourhealthinfo.com/</loc>
+        <loc>http://apexwellness.netlify.app/</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
@@ -16,7 +16,7 @@
     
     <!-- Contact Page -->
     <url>
-        <loc>https://ourhealthinfo.com/contact.html</loc>
+        <loc>http://apexwellness.netlify.app/contact.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
@@ -26,7 +26,7 @@
     
     <!-- About Page -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/about.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/about.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
@@ -34,7 +34,7 @@
     
     <!-- Privacy Policy -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/privacy.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/privacy.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.60</priority>
@@ -42,7 +42,7 @@
     
     <!-- Disclaimer -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/disclaimer.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/disclaimer.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.60</priority>
@@ -50,7 +50,7 @@
     
     <!-- Weight Loss Journey Story -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/my-weight-loss-journey.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/my-weight-loss-journey.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.90</priority>
@@ -58,7 +58,7 @@
     
     <!-- Mindset & Habits Story -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/how-i-started-healthy-diet.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/how-i-started-healthy-diet.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
@@ -66,7 +66,7 @@
     
     <!-- Complete Fitness Guide -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/my-daily-fitness-routine.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/my-daily-fitness-routine.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
@@ -74,7 +74,7 @@
     
     <!-- Complete Beginner Fitness Guide -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/complete-beginner-fitness-guide.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/complete-beginner-fitness-guide.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
@@ -82,7 +82,7 @@
     
     <!-- Complete Nutrition Guide -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/complete-nutrition-guide.html</loc>
+        <loc>http://ourhealthinfo.com/blog/complete-nutrition-guide.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
@@ -90,7 +90,7 @@
     
     <!-- Complete Mindset Guide -->
     <url>
-        <loc>https://ourhealthinfo.com/blog/complete-mindset-guide.html</loc>
+        <loc>http://apexwellness.netlify.app/blog/complete-mindset-guide.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
@@ -100,7 +100,7 @@
     
     <!-- BMI Calculator Tool -->
     <url>
-        <loc>https://ourhealthinfo.com/tools/bmi-calculator.html</loc>
+        <loc>http://apexwellness.netlify.app/tools/bmi-calculator.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
@@ -108,7 +108,7 @@
     
     <!-- Calorie Calculator Tool -->
     <url>
-        <loc>https://ourhealthinfo.com/tools/calorie-calculator.html</loc>
+        <loc>http://apexwellness.netlify.app/tools/calorie-calculator.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
@@ -116,7 +116,7 @@
     
     <!-- Body Fat Calculator Tool -->
     <url>
-        <loc>https://ourhealthinfo.com/tools/body-fat-calculator.html</loc>
+        <loc>http://apexwellness.netlify.app/tools/body-fat-calculator.html</loc>
         <lastmod>2026-06-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>

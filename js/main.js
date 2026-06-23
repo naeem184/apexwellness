@@ -336,3 +336,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+// Auto Scroll & Page Navigation - Minified Version

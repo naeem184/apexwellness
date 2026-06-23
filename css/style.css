@@ -929,5 +929,20 @@ body.dark-mode .sidebar-widget h3 {
 .inarticle-ad{
     width: 80%;
 }
-/* ========== ADDITIONAL STYLES ========== */
-/* Example: Add a new class for a special banner */
+
+
+/* Leaf Icon Styling */
+.logo i.fa-leaf,
+.logo h1 i,
+header .logo i {
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.logo i.fa-leaf:hover,
+.logo h1 i:hover,
+header .logo i:hover {
+    transform: scale(1.2) rotate(15deg) !important;
+    color: #2ecc71 !important;
+}
